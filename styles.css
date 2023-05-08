@@ -331,80 +331,59 @@ nav {
   
   /* profile.html */
   .container2 {
-    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
   }
   
   .language-profile {
-    margin-top: 30px;
-    background-color: #fff;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
   }
   
   .language-profile h1 {
-    font-size: 3em;
-    margin: 0;
-    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
   
   .profile-section {
-    margin-top: 30px;
-    padding-left: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .profile-section h2 {
-    font-size: 2em;
-    margin-top: 0;
-    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
   
   .profile-section p {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
   }
   
   .profile-section ul {
-    margin-top: 0;
-    padding-left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   
-  .profile-section li {
-    margin-bottom: 5px;
+  .profile-section ul li {
+    margin-bottom: 10px;
   }
   
   .profile-section a {
-    color: #000;
+    color: #3B5998;
     text-decoration: none;
-    font-weight: bold;
   }
   
   .profile-section a:hover {
-    color: #4caf50;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .container {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .language-profile {
-      width: 80%;
-    }
-  
-    .profile-section {
-      padding-left: 40px;
-    }
-  
-    .profile-section h2 {
-      font-size: 2.5em;
-    }
-  
-    .profile-section p {
-      font-size: 1.3em;
-    }
+    text-decoration: underline;
   }
   
   
