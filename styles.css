@@ -257,7 +257,14 @@ nav {
 /* Page layout */
 /* programming profiles page */
 
-language-section {
+.profile-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color:#f4f4f4;
+}
+
+.language-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -278,20 +285,18 @@ language-section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     margin: 1rem;
     padding: 3rem;
-    height: 85%;
-    width: 30%;
-    display: inline-block;
-    column-count: 3;
+    height: 30%;
+    flex-basis: 30%;
   }
   
   .language h2 {
-    color: #333;
+    color: #222;
     font-size: 24px;
     margin-bottom: 10px;
   }
   
   .language p {
-    color: #ccc;
+    color: #626262;
     font-size: 16px;
     margin-top: 0;
     line-height: 1.5;
@@ -310,6 +315,98 @@ language-section {
   .language a:hover {
     background-color: #3c903c;
   }
+  
+  @media (max-width: 1200px) {
+    .language {
+      flex-basis: 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .language {
+      flex-basis: 100%;
+      margin: 1rem 0;
+    }
+  }
+  
+  /* profile.html */
+  .container2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .language-profile {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  
+  .language-profile h1 {
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .profile-section {
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+  
+  .profile-section h2 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .profile-section p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  
+  .profile-section ul {
+    margin-top: 0;
+    padding-left: 20px;
+  }
+  
+  .profile-section li {
+    margin-bottom: 5px;
+  }
+  
+  .profile-section a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .profile-section a:hover {
+    color: #4caf50;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .language-profile {
+      width: 80%;
+    }
+  
+    .profile-section {
+      padding-left: 40px;
+    }
+  
+    .profile-section h2 {
+      font-size: 2.5em;
+    }
+  
+    .profile-section p {
+      font-size: 1.3em;
+    }
+  }
+  
   
   
   
