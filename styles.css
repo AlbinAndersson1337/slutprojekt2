@@ -1,0 +1,329 @@
+/* styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* font */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* body background */
+  body {
+    background-color: #333;
+  }
+  
+  /* navigation menu */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10rem;
+    position: relative; /* add this rule to make the sub-menu position relative */
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1px; /* change this to left: -1px to fix a gap between the menu and sub-menu */
+    width: 10rem; /* add this rule to set the width of the sub-menu */
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: #222; /* change the color as needed */
+    width: 100%;
+    opacity: 1;
+  }
+  nav ul li:nth-child(2) {
+    position: relative;
+  }
+  
+  nav ul ul li {
+    position: relative;
+  }
+  
+  nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  
+  
+  
+  
+  /* header */
+  header {
+    background-image: url("images/hero.png");
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+  }
+  
+  .hero-text {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+  
+  
+  header h1 {
+    font-size: 3rem;
+    color: #eee;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  /* main */
+  main {
+    padding: 50px;
+    color: #fff;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #eee;
+  }
+  
+  main p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .programming-profiles h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .language-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .language-buttons a {
+    margin: 10px;
+    margin-right: 50px;
+    text-decoration: none;
+  }
+  
+  .language-buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10rem;
+  }
+  
+  .language-buttons button:last-child {
+    margin-right: 0;
+  }
+
+  .language-buttons button:hover {
+    background-color: #3e8e41;
+  }
+
+  /* Styling for the "Learn about programming languages" section */
+  .learn-section,
+  .featured-section {
+    background-color: #666;
+    padding: 3rem 0;
+  }
+  
+  .learn-section h2,
+  .featured-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .learn-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .featured-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .featured-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .featured-article img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .featured-article h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .featured-article p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .featured-article a {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  
+  .featured-article a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /*profiles.html*
+/* Page layout */
+/* programming profiles page */
+
+language-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .language {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 3rem;
+    height: 85%;
+    width: 30%;
+    display: inline-block;
+    column-count: 3;
+  }
+  
+  .language h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .language p {
+    color: #ccc;
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 1.5;
+  }
+  
+  .language a {
+    display: inline-block;
+    background-color: #57c457;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+  
+  .language a:hover {
+    background-color: #3c903c;
+  }
+  
+  
+  
+  
+  
+  /* footer */
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+  }
+  
