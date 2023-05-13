@@ -1,0 +1,343 @@
+    
+    {
+        "test": {
+            "id": 0,
+            "name": "C",
+            "introduction": "C is a general-purpose programming language that was first developed in the 1970s. It is one of the most widely used programming languages of all time and is known for its efficiency and flexibility.",
+            "syntax": "C syntax is similar to many other programming languages, but it has a few features that make it unique. For example, C uses semicolons to end statements instead of newlines like Python or Ruby."
+        },    
+    "java": {
+    "name": "Java",
+    "introduction": "Java is a popular programming language developed by Sun Microsystems and now owned by Oracle. It was first released in 1995 and is known for its portability and security features.",
+    "syntax": "Java syntax is similar to C++ syntax, but with fewer low-level facilities. The language is object-oriented and includes features like automatic memory management and a strong type system.",
+    "dataTypes": [
+      "byte",
+      "short",
+      "int",
+      "long",
+      "float",
+      "double",
+      "char",
+      "boolean"
+    ],
+    "uses": [
+      "Desktop Applications",
+      "Web Applications",
+      "Mobile Applications",
+      "Game Development",
+      "Big Data",
+      "Cloud Computing"
+    ],
+    "examples": [
+      {
+        "title": "Hello World",
+        "code": "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      },
+      {
+        "title": "Bubble Sort",
+        "code": "void bubbleSort(int arr[]) {\n    int n = arr.length;\n    for (int i = 0; i < n-1; i++)\n        for (int j = 0; j < n-i-1; j++)\n            if (arr[j] > arr[j+1])\n            {\n                int temp = arr[j];\n                arr[j] = arr[j+1];\n                arr[j+1] = temp;\n            }\n}"
+      }
+    ],
+    "frameworks": [
+      "Spring",
+      "Hibernate",
+      "Struts",
+      "JavaServer Faces (JSF)",
+      "Apache Wicket"
+    ],
+    "forums": [
+      {
+        "name": "JavaRanch",
+        "url": "https://coderanch.com/"
+      },
+      {
+        "name": "Stack Overflow",
+        "url": "https://stackoverflow.com/questions/tagged/java"
+      },
+      {
+        "name": "Reddit Java",
+        "url": "https://www.reddit.com/r/java/"
+      }
+    ]
+  },
+  
+  "python": {
+    "name": "Python",
+    "introduction": "Python is a high-level programming language that was first released in 1991. It is known for its simplicity, readability, and ease of use. Python is used for a wide variety of applications, from web development to scientific computing.",
+    "syntax": "Python syntax is designed to be easy to read and write. It uses indentation to indicate code blocks instead of curly braces like many other programming languages. Python is dynamically typed, which means that the type of a variable is determined at runtime rather than at compile time.",
+    "dataTypes": [
+      "int",
+      "float",
+      "complex",
+      "bool",
+      "str",
+      "list",
+      "tuple",
+      "set",
+      "dict"
+    ],
+    "uses": [
+      "Web Development",
+      "Scientific Computing",
+      "Data Analysis",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Scripting"
+    ],
+    "examples": [
+      {
+        "title": "Hello World",
+        "code": "print(\"Hello, World!\")"
+      },
+      {
+        "title": "Factorial",
+        "code": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)"
+      }
+    ],
+    "frameworks": [
+      "Django",
+      "Flask",
+      "Pyramid",
+      "Bottle",
+      "CherryPy"
+    ],
+    "forums": [
+      {
+        "name": "Python.org",
+        "url": "https://www.python.org/community/forums/"
+      },
+      {
+        "name": "Reddit Python",
+        "url": "https://www.reddit.com/r/Python/"
+      },
+      {
+        "name": "Stack Overflow",
+        "url": "https://stackoverflow.com/questions/tagged/python"
+      }
+    ]
+  }
+,
+"javascript": {
+    "name": "JavaScript",
+    "introduction": "JavaScript is a high-level, interpreted programming language that is widely used on the web. It was first released in 1995 and is known for its versatility and ability to run on both the client and server-side.",
+    "syntax": "JavaScript syntax is similar to C syntax, but with additional features and more flexible typing. It is an object-oriented language, but also supports functional programming styles.",
+    "dataTypes": [
+      "Number",
+      "String",
+      "Boolean",
+      "Null",
+      "Undefined",
+      "Symbol",
+      "Object"
+    ],
+    "uses": [
+      "Web Development",
+      "Mobile App Development",
+      "Desktop App Development",
+      "Server-side Development",
+      "Game Development",
+      "Internet of Things (IoT)"
+    ],
+    "examples": [
+      {
+        "title": "Hello World",
+        "code": "console.log('Hello, World!');"
+      },
+      {
+        "title": "FizzBuzz",
+        "code": "for (var i = 1; i <= 100; i++) {\n  var output = '';\n  if (i % 3 === 0) output += 'Fizz';\n  if (i % 5 === 0) output += 'Buzz';\n  console.log(output || i);\n}"
+      }
+    ],
+    "frameworks": [
+      "React",
+      "Angular",
+      "Vue.js",
+      "Node.js",
+      "Express",
+      "Meteor"
+    ],
+    "forums": [
+      {
+        "name": "Stack Overflow",
+        "url": "https://stackoverflow.com/questions/tagged/javascript"
+      },
+      {
+        "name": "Reddit JavaScript",
+        "url": "https://www.reddit.com/r/javascript/"
+      },
+      {
+        "name": "JavaScript Daily",
+        "url": "https://javascriptdaily.github.io/"
+      }
+    ]
+  },
+  "c++": {
+    "name": "C++",
+    "introduction": "C++ is a general-purpose programming language that was created as an extension of the C programming language. It was first released in 1985 and is known for its high performance and efficiency, making it a popular choice for developing system software, device drivers, and other applications that require low-level memory manipulation.",
+    "syntax": "C++ syntax is similar to C syntax, but with additional features like object-oriented programming, templates, and exception handling. The language includes support for low-level programming, such as memory management, pointers, and arrays.",
+    "dataTypes": [
+      "int",
+      "float",
+      "double",
+      "char",
+      "bool",
+      "void"
+    ],
+    "uses": [
+      "System software",
+      "Device drivers",
+      "Embedded systems",
+      "High-performance servers",
+      "Game engines",
+      "Financial systems"
+    ],
+    "examples": [
+      {
+        "title": "Hello World",
+        "code": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}"
+      },
+      {
+        "title": "Bubble Sort",
+        "code": "void bubbleSort(int arr[], int n) {\n    int i, j;\n    for (i = 0; i < n-1; i++)\n        for (j = 0; j < n-i-1; j++)\n            if (arr[j] > arr[j+1])\n                std::swap(arr[j], arr[j+1]);\n}"
+      }
+    ],
+    "frameworks": [
+      "Qt",
+      "Boost",
+      "STL",
+      "MFC",
+      "ACE"
+    ],
+    "forums": [
+      {
+        "name": "C++ Forum",
+        "url": "http://www.cplusplus.com/forum/"
+      },
+      {
+        "name": "Stack Overflow",
+        "url": "https://stackoverflow.com/questions/tagged/c%2B%2B"
+      },
+      {
+        "name": "Reddit C++",
+        "url": "https://www.reddit.com/r/cpp/"
+      }
+    ]
+  },
+  "csharp": {
+    "name": "C#",
+    "introduction": "C# is a popular modern programming language developed by Microsoft as part of the .NET initiative. It was first released in 2000 and is known for its ease of use, strong typing, and object-oriented features.",
+    "syntax": "C# syntax is similar to that of Java and C++. It includes features like garbage collection, type safety, and support for generics and lambdas.",
+    "dataTypes": [
+      "bool",
+      "byte",
+      "char",
+      "decimal",
+      "double",
+      "float",
+      "int",
+      "long",
+      "object",
+      "sbyte",
+      "short",
+      "string",
+      "uint",
+      "ulong",
+      "ushort"
+    ],
+    "uses": [
+      "Desktop Applications",
+      "Web Applications",
+      "Game Development",
+      "Mobile Applications",
+      "Windows Services",
+      "Cloud Computing"
+    ],
+    "examples": [
+      {
+        "title": "Hello World",
+        "code": "using System;\n\nnamespace HelloWorld\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.WriteLine(\"Hello World!\");\n        }\n    }\n}"
+      },
+      {
+        "title": "Bubble Sort",
+        "code": "void bubbleSort(int[] arr)\n{\n    int n = arr.Length;\n    for (int i = 0; i < n - 1; i++)\n        for (int j = 0; j < n - i - 1; j++)\n            if (arr[j] > arr[j + 1])\n            {\n                int temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n}"
+      }
+    ],
+    "frameworks": [
+      ".NET Framework",
+      "ASP.NET",
+      ".NET Core",
+      "Unity",
+      "Windows Presentation Foundation (WPF)"
+    ],
+    "forums": [
+      {
+        "name": "Stack Overflow",
+        "url": "https://stackoverflow.com/questions/tagged/c%23"
+      },
+      {
+        "name": "C# Corner",
+        "url": "https://www.c-sharpcorner.com/"
+      },
+      {
+        "name": "r/csharp",
+        "url": "https://www.reddit.com/r/csharp/"
+      }
+    ]
+  },
+  "php": {
+    "name": "PHP",
+    "introduction": "PHP is a server-side scripting language designed primarily for web development. It was first released in 1995 and is widely used for creating dynamic web pages and web applications.",
+    "syntax": "PHP syntax is similar to C syntax, but with additional features for web development like built-in functions for interacting with databases and handling HTTP requests.",
+    "dataTypes": [
+      "integer",
+      "float",
+      "string",
+      "boolean",
+      "array",
+      "object",
+      "resource",
+      "null"
+    ],
+    "uses": [
+      "Web Development",
+      "Server-Side Scripting",
+      "Command-Line Scripting",
+      "GUI Applications"
+    ],
+    "examples": [
+      {
+        "title": "Hello World",
+        "code": "<?php\n    echo \"Hello, World!\";\n?>"
+      },
+      {
+        "title": "FizzBuzz",
+        "code": "<?php\n    for ($i = 1; $i <= 100; $i++) {\n        if ($i % 3 == 0 && $i % 5 == 0) {\n            echo \"FizzBuzz\\n\";\n        } elseif ($i % 3 == 0) {\n            echo \"Fizz\\n\";\n        } elseif ($i % 5 == 0) {\n            echo \"Buzz\\n\";\n        } else {\n            echo $i . \"\\n\";\n        }\n    }\n?>"
+      }
+    ],
+    "frameworks": [
+      "Laravel",
+      "Symfony",
+      "CodeIgniter",
+      "CakePHP",
+      "Zend Framework"
+    ],
+    "forums": [
+      {
+        "name": "PHP.net",
+        "url": "https://www.php.net/manual/en/index.php"
+      },
+      {
+        "name": "Stack Overflow",
+        "url": "https://stackoverflow.com/questions/tagged/php"
+      },
+      {
+        "name": "Reddit PHP",
+        "url": "https://www.reddit.com/r/PHP/"
+      }
+    ]
+  }
+}
+
+
+      
+  

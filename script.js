@@ -1,18 +1,48 @@
-fetch('./programming-profiles.js')
-  .then(response => response.json())
-  .then(data => {
-    const languageButtons = data.map(language => {
-      const button = document.createElement('button');
-      button.textContent = language.name;
-      button.addEventListener('click', () => {
-        window.location.href = language.url;
-      });
-      return button;
-    });
+async function loadData() {
 
-    const languageButtonsContainer = document.querySelector('.language-buttons');
-    languageButtons.forEach(button => {
-      languageButtonsContainer.appendChild(button);
-    });
-  })
-  .catch(error => console.error(error));
+
+    return new Promise((resolve) => {
+        fetch("./profile.json", { mode: "no-cors" }).then((respone) => (
+            respone.json()
+        )).then((jsonFromFile) => {
+            resolve(jsonFromFile);
+        }).catch((error) => {
+            console.log(error);
+            resolve([]);
+        });
+    })
+
+
+  }
+
+  async function displayProducts() {
+
+
+
+    let output = "";
+    // vänta på loadData har returnerat datan
+    var data = await loadData();
+
+
+    for (let item of data) {
+
+        output += 
+            <a href="${item.href}"><div id="lagRuta" style="border: 2px solid black; padding: 10px; border-radius:29px; margin-right: 5%;">
+                <img src="${item.image}" alt="Lol">
+                <span>${item.name}</span>
+                <h5>Mästerskap: ${item.introduction}</h5>
+                <h5>vinster: ${item.syntax}</h5>
+                <h6>klicka för mer info</h6>
+                
+                </div>     
+                </div>    
+            </div>
+  
+  
+            ;
+
+    }
+    document.querySelector('.products').innerHTML = output;
+    document.querySelector('.products1').innerHTML = output;
+
+};
