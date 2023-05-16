@@ -1,48 +1,48 @@
-async function loadData() {
+const forums = document.getElementById("forums");
 
-
-    return new Promise((resolve) => {
-        fetch("./profile.json", { mode: "no-cors" }).then((respone) => (
-            respone.json()
-        )).then((jsonFromFile) => {
-            resolve(jsonFromFile);
-        }).catch((error) => {
-            console.log(error);
-            resolve([]);
-        });
-    })
-
-
+function updateProfile() {
+  const languageSelect = document.getElementById("language-select");
+  const selectedLanguage = languageSelect.value;
+  const language = languages[selectedLanguage];
+  document.getElementById("language-name").innerHTML = language.name;
+  document.getElementById("introduction").innerHTML = language.introduction;
+  document.getElementById("syntax").innerHTML = language.syntax;
+  document.getElementById("data-types").innerHTML = "";
+  for (const dataType of language.dataTypes) {
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode(dataType));
+    document.getElementById("data-types").appendChild(li);
   }
-
-  async function displayProducts() {
-
-
-
-    let output = "";
-    // vänta på loadData har returnerat datan
-    var data = await loadData();
-
-
-    for (let item of data) {
-
-        output += 
-            <a href="${item.href}"><div id="lagRuta" style="border: 2px solid black; padding: 10px; border-radius:29px; margin-right: 5%;">
-                <img src="${item.image}" alt="Lol">
-                <span>${item.name}</span>
-                <h5>Mästerskap: ${item.introduction}</h5>
-                <h5>vinster: ${item.syntax}</h5>
-                <h6>klicka för mer info</h6>
-                
-                </div>     
-                </div>    
-            </div>
-  
-  
-            ;
-
-    }
-    document.querySelector('.products').innerHTML = output;
-    document.querySelector('.products1').innerHTML = output;
-
-};
+  document.getElementById("uses").innerHTML = "";
+  for (const use of language.uses) {
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode(use));
+    document.getElementById("uses").appendChild(li);
+  }
+  document.getElementById("examples").innerHTML = "";
+  for (const example of language.examples) {
+    const li = document.createElement("li");
+    const h3 = document.createElement("h3");
+    h3.appendChild(document.createTextNode(example.title));
+    li.appendChild(h3);
+    const pre = document.createElement("pre");
+    pre.appendChild(document.createTextNode(example.code));
+    li.appendChild(pre);
+    document.getElementById("examples").appendChild(li);
+  }
+  document.getElementById("frameworks").innerHTML = "";
+  for (const framework of language.frameworks) {
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode(framework));
+    document.getElementById("frameworks").appendChild(li);
+  }
+  forums.innerHTML = "";
+  for (const forum of language.forums) {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = forum.link;
+    a.appendChild(document.createTextNode(forum.name));
+    li.appendChild(a);
+    forums.appendChild(li);
+  }
+}
