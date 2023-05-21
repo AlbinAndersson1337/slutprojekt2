@@ -35,12 +35,13 @@
       <div id="content"></div>
     </div>
     <main>
-        <section class="language-section">
+        <section class="language-section" id="languagesection">
             <div class="container">
               <div class="language">
-                <h2>Python</h2>
+                <h2 id="python1">Python</h2>
                 <p>Python is a high-level programming language that is known for its simplicity, readability, and versatility. It is widely used for web development, data analysis, artificial intelligence, and scientific computing.</p>
-                <a href="profile.html" onclick="updateProfile('python')">Learn more</a>
+                <a onclick="updateProfile('python')">Learn more</a>
+
               </div>
               <div class="language">
                 <h2>JavaScript</h2>
@@ -85,13 +86,46 @@
             </div>
           </section>
           
+          <div class="container2" style="display:none" id="profile4">
+            <div class="language-profile">
+              <h1 id="language-name"></h1>
+              <div class="profile-section">
+                <h2>Introduction</h2>
+                <p id="introduction"></p>
+              </div>
+              <div class="profile-section">
+                <h2>Syntax</h2>
+                <p id="syntax"></p>
+              </div>
+              <div class="profile-section">
+                <h2>Data Types</h2>
+                <ul id="data-types"></ul>
+              </div>
+              <div class="profile-section">
+                <h2>Uses</h2>
+                <ul id="uses"></ul>
+              </div>
+              <div class="profile-section">
+                <h2>Examples</h2>
+                <ul id="examples"></ul>
+              </div>
+              <div class="profile-section">
+                <h2>Frameworks</h2>
+                <ul id="frameworks"></ul>
+              </div>
+              <div class="profile-section">
+                <h2>Forums</h2>
+                <ul id="forums"></ul>
+              </div>
+            </div>
+          </div>
+          
+
           <footer>
             <p>&copy; 2023 Programming Languages Website. All rights reserved.</p>
         </footer>
       </main>
       
-      <script src="script.js"></script>
   
-    <script src="app.js"></script>
   </body>
   </html>
