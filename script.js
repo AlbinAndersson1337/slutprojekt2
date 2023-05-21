@@ -4,7 +4,11 @@ function showProfile(){
   document.getElementById("languagesection").style.display = "none";
   console.log("showProfile");
 }
-
+function hideProfile(){
+  document.getElementById("profile4").style.display = "none";
+  document.getElementById("languagesection").style.display = "block";
+  console.log("hideProfile");
+}
 
 function updateProfile(lang) {
       
