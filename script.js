@@ -1,11 +1,13 @@
 //const forums = document.getElementById("forums");
 function showProfile(){
   document.getElementById("profile4").style.display = "block";
+  document.getElementById("back-btn").style.display = "block";
   document.getElementById("languagesection").style.display = "none";
   console.log("showProfile");
 }
 function hideProfile(){
   document.getElementById("profile4").style.display = "none";
+  document.getElementById("back-btn").style.display = "none";
   document.getElementById("languagesection").style.display = "block";
   console.log("hideProfile");
 }
@@ -352,13 +354,9 @@ function updateProfile(lang) {
       language = itter[1];
     }
   })
-  //const languageSelect = document.getElementById("language-select");
-  //const selectedLanguage = languageSelect.value;
-  //const language = languages[selectedLanguage];
   document.getElementById("language-name").innerHTML = language.name;
   document.getElementById("introduction").innerHTML = language.introduction;
   document.getElementById("syntax").innerHTML = language.syntax;
-  //document.getElementById("data-types").innerHTML = "";
   
   console.log(language)
   for (const dataType of language.dataTypes) {

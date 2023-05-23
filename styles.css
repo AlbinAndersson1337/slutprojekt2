@@ -262,6 +262,7 @@ nav {
     font-size: 2rem;
     margin-bottom: 0.5rem;
     color:#f4f4f4;
+    position: relative;
 }
 
 .language-section {
@@ -310,6 +311,18 @@ nav {
     padding: 1rem 2rem;
     margin-top: 1rem;
     text-decoration: none;
+  }
+
+  #back-btn{
+    position: absolute;
+    left: 40%;
+    background-color: #57c457;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    margin-left: 1rem;
   }
   
   .language a:hover {
