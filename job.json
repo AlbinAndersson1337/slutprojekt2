@@ -1,0 +1,68 @@
+{
+    "jobs": [
+      {
+        "title": "Software Engineer",
+        "company": "Acme Inc.",
+        "location": "San Francisco, CA",
+        "description": "We are seeking a skilled software engineer to join our team. The ideal candidate will have experience with Java and be proficient in agile development methodologies.",
+        "applyUrl": "http://example.com"
+      },
+      {
+        "title": "Web Developer",
+        "company": "Tech Solutions",
+        "location": "New York, NY",
+        "description": "Tech Solutions is looking for a talented web developer to build and maintain responsive websites. Proficiency in HTML, CSS, and JavaScript is required.",
+        "applyUrl": "http://example.com"
+      },
+      {
+        "title": "Data Analyst",
+        "company": "TechCo",
+        "location": "Seattle, WA",
+        "description": "TechCo is looking for a skilled data analyst to analyze and interpret complex data sets. Strong analytical and problem-solving skills are required.",
+        "applyUrl": "http://example.com"
+      },
+      {
+        "title": "Mobile App Developer",
+        "company": "Mobile Solutions",
+        "location": "Los Angeles, CA",
+        "description": "Mobile Solutions is seeking a talented mobile app developer to create innovative and user-friendly mobile applications. Proficiency in iOS and Android development is required.",
+        "applyUrl": "http://example.com"
+      },
+      {
+        "title": "Front-end Developer",
+        "company": "WebTech",
+        "location": "Austin, TX",
+        "description": "WebTech is hiring a front-end developer with expertise in HTML, CSS, and JavaScript frameworks. Experience with responsive design and cross-browser compatibility is a plus.",
+        "applyUrl": "http://example.com"
+      },
+      {
+        "title": "Full-stack Developer",
+        "company": "CodeCraft",
+        "location": "Chicago, IL",
+        "description": "CodeCraft is seeking a full-stack developer to work on exciting projects. Proficiency in front-end and back-end technologies is required.",
+        "applyUrl": "http://example.com"
+      },
+      {
+        "title": "UI/UX Designer",
+        "company": "DesignCo",
+        "location": "San Francisco, CA",
+        "description": "DesignCo is looking for a talented UI/UX designer to create visually appealing and user-friendly interfaces. Experience with design tools and a strong portfolio are required.",
+        "applyUrl": "http://example.com"
+      },
+      {
+        "title": "DevOps Engineer",
+        "company": "CloudTech",
+        "location": "Seattle, WA",
+        "description": "CloudTech is seeking a DevOps engineer to manage and optimize our cloud infrastructure. Experience with containerization and automation tools is required.",
+        "applyUrl": "http://example.com"
+      },
+      {
+        "title": "Cybersecurity Analyst",
+        "company": "SecureSystems",
+        "location": "Washington, D.C.",
+        "description": "SecureSystems is hiring a cybersecurity analyst to identify and mitigate security risks. Strong knowledge of network security and penetration testing is required.",
+        "applyUrl": "http://example.com"
+      }
+    ]
+  }
+  

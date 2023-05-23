@@ -17,25 +17,28 @@
   }
   
   /* navigation menu */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 0;
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
   }
   
   nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10rem;
-    position: relative; /* add this rule to make the sub-menu position relative */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 10px;
   }
   
   nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
+    padding: 10px;
   }
   
   nav ul ul {
@@ -69,6 +72,22 @@ nav {
     position: absolute;
     left: 100%;
     top: 0;
+  }
+  /*responsvie nav bar*/
+  @media screen and (max-width: 600px) {
+    nav ul {
+      display: none;
+    }
+  
+    nav li {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    nav a {
+      display: block;
+      padding: 5px;
+    }
   }
   
   
@@ -402,9 +421,90 @@ nav {
   
   
   
-  
-  
-  
+  /* about.html */
+  .about-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem 2rem 2rem 2rem;
+  }
+  .about-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* jobboard.html */
+  .jobboard * {
+    margin: 0;
+    padding: 0;
+  }
+  /* Styles for the job board section */
+  .jobboard {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+
+  .jobboard form {
+    margin-bottom: 20px;
+  }
+
+  .jobboard input[type="text"],
+  .jobboard input[type="submit"] {
+    margin-bottom: 10px;
+  }
+
+  /* Styles for the job cards */
+  .featured-jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .job-card {
+    width: 300px;
+    background-color: #f8f8f8;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .job-card h3 {
+    margin-top: 0;
+  }
+
+  .job-card p {
+    margin-bottom: 10px;
+  }
+
+  .job-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .job-card a:hover {
+    background-color: #0056b3;
+  }
+
+
+
+
+
+
+
   /* footer */
   footer {
     background-color: #222;
